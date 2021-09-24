@@ -1,0 +1,6 @@
+{
+  "apiPath": "/api",
+  "jwt": {
+    "expiresInSeconds": 86400
+  }
+}
