@@ -8,7 +8,7 @@ export class TransactionController {
   constructor(private readonly transactionService: TransactionService) {}
 
   @SwaggerRouteDecorator({
-    apiOperationData: { summary: 'Registration of user' },
+    apiOperationData: { summary: 'Charge action' },
     apiResponseData: { status: 200 },
     apiBodyData: { type: CreateTransactionDto }
   })

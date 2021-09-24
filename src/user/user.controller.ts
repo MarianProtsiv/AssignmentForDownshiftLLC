@@ -7,6 +7,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { GetUser } from './decorators/user';
 import { User } from './entities/user.entity';
 import { SwaggerRouteDecorator } from 'src/core/decorators';
+import { LoginDto } from './dto/login.dto';
 
 @Controller('user')
 export class UserController {
@@ -25,9 +26,9 @@ export class UserController {
   }
 
   @SwaggerRouteDecorator({
-    apiOperationData: { summary: 'Logging to the system' },
+    apiOperationData: { summary: 'Login' },
     apiResponseData: { status: 200, type: TokenDto },
-    apiBodyData: { type: TokenDto }
+    apiBodyData: { type: LoginDto }
   })
   @HttpCode(200)
   @Post('login')

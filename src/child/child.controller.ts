@@ -53,7 +53,7 @@ export class ChildController {
   }
 
   @SwaggerRouteDecorator({
-    apiOperationData: { summary: 'Get all childrens' },
+    apiOperationData: { summary: 'Get all children' },
     apiResponseData: { status: 200, type: [GetChildDto] }
   })
   @HttpCode(200)
@@ -64,7 +64,7 @@ export class ChildController {
   }
 
   @SwaggerRouteDecorator({
-    apiOperationData: { summary: 'Delete children' },
+    apiOperationData: { summary: 'Delete child' },
     apiResponseData: { status: 200 }
   })
   @HttpCode(200)

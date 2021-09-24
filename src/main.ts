@@ -72,7 +72,7 @@ async function bootstrap() {
     );
 
     const documentConfig = new DocumentBuilder()
-      .setTitle('The Test Project')
+      .setTitle('Test assignment for Downshift LLC')
       .setDescription(
         'API docs. All responses are wrapped into "{data: response}"'
       )
